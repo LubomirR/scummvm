@@ -84,8 +84,8 @@ IfCommand::IfCommand(uint8 sceneId, uint8 objectId, uint16 value, bool negative)
 	_negative(negative)
 {}
 
-Command::ExecuteResult IfCommand::execute(GameData &gameData) {
-	Scene *const scene = gameData.getScene(_sceneId);
+Command::ExecuteResult IfCommand::execute(ScriptExecutionContext &scriptExecCtx) {
+	Scene *const scene = scriptExecCtx.getGameData().getScene(_sceneId);
 	if (!scene) {
 		return Finished;
 	}
