@@ -47,7 +47,7 @@
 
 namespace MutationOfJB {
 
-bool IfCommandParser::parse(const Common::String &line, ScriptParseContext &parseContext, Command *&command) {
+bool IfCommandParser::parse(const Common::String &line, ScriptParseContext &, Command *&command) {
 	// IFtss oo val!
 	// <t>   1B Tag.
 	// <ss>  2B Scene.
