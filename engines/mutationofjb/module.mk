@@ -21,6 +21,7 @@ MODULE_OBJS := \
 	commands/saycommand.o \
 	commands/seqcommand.o \
 	commands/talkcommand.o \
+	commands/randomcommand.o \
 	tasks/conversationtask.o \
 	tasks/taskmanager.o \
 	widgets/buttonwidget.o \
